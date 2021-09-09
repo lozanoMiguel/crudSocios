@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formulario</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<header class="header">
+		<nav class="nav">
+			<img class="logoNav" src="logo/boc.png">
+			<ul class="navMenu">
+				<li class="navItem">Contacto</li>
+				<li class="navItem">Nosotros</li>
+				<li class="navItem" id="socios">Socios</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="modal-background" id="backInfo">
+		<div class="modal-info">
+			<h2>Socio registrado exitosamente !</h2>
+			<button class="button" id="cerrar">Cerrar</button>
+		</div>
+	</div>
+	<div class="modal-background" id="backSocios">
+		<div class="modal-tabla">
+			<div class="tabla-item-encabezado">Nombre</div>
+			<div class="tabla-item-encabezado">Numero de socio</div>
+			<div class="tabla-item-encabezado email">Email</div>
+		</div>
+	</div>
+	<div class="container">
+		<form class="container-form" autocomplete="off">
+			<input type="text" name="nombre" placeholder="Nombre" id="name">
+			<input type="text" name="apellido" placeholder="Apellido" id="lastName">
+			<input type="text" name="dni" placeholder="DNI" id="dni">
+			<input type="email" name="email" placeholder="Email" id="email">
+			<input type="text" name="nroSocio" placeholder="Numero de socio" id="nroSocio">
+			<input type="submit" value="Registrar" placeholder="" id="submit">
+		</form>
+		<div class="container-img">
+			<img src="logo/boc.png">
+		</div>
+	</div>
+	<script type="text/javascript" src="codigo.js"></script>
+</body>
+</html>
